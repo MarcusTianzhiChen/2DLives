@@ -1,11 +1,10 @@
 package twodlife.food;
 
-import twodlife.ObjectBase;
+public interface Food {
 
-public abstract class Food implements ObjectBase {
+    public int getCarbs();
 
-    public int fiber = 0;
-    public int protein = 0;
-    public int fat = 0;
+    public int getProtein();
 
+    public int getFat();
 }

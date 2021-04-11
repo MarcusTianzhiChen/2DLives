@@ -1,14 +1,14 @@
 package twodlife.environments;
 
-import twodlife.ObjectBase;
+import twodlife.LifeBase;
 
 import java.util.ArrayList;
 
-public class Cell {
+public class Cell implements Cloneable {
 
-    public ArrayList<ObjectBase> objects;
+    public ArrayList<LifeBase> objects;
 
-    public Cell(ArrayList<ObjectBase> objects) {
+    public Cell(ArrayList<LifeBase> objects) {
         this.objects = objects;
     }
 

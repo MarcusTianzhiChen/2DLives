@@ -1,8 +1,25 @@
 package twodlife.food;
 
-public class Grass extends Food {
+import twodlife.LifeBase;
+
+public class Grass extends LifeBase implements Food {
 
     public Grass() {
-        this.fiber = 5;
+        super(null);
+    }
+
+    @Override
+    public int getCarbs() {
+        return 20;
+    }
+
+    @Override
+    public int getProtein() {
+        return 0;
+    }
+
+    @Override
+    public int getFat() {
+        return 0;
     }
 }
